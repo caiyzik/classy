@@ -1,0 +1,597 @@
+/* Validada */
+/*-------------------------------------------------------------------------------------------------
+-Producto:	ESTIL
+-Universidad: EINA
+-Versión: rev. 2.0.57
+-Compatibilidad: FF 3.X y sup., IE 7 y sup., Chrome 12 y sup., Opera 10 y sup., Safari 5 y sup.
+-Autores:	ARAM, AVIM, EROF, JMSM, RCOJ, TMOP 
+			SIGMA Gestión Universitaria
+			http://www.gestionuniversitariasigma.com/
+---------------------------------------------------------------------------------------------------*/
+
+/* -------------------------------------------------------
+                    Botones - General 
+----------------------------------------------------------*/
+.sigAccion
+{
+  float: none; 
+  clear: none; 
+  text-align: center; 
+  font-size: 12px; 
+  font-weight: bold; 
+  height: auto; 
+  width:auto;
+  margin: 0px 0px 5px 0px;
+  display:inline;
+}
+.sigAccion a.sigBtnHrefXXXL {
+ display: inline-block;
+ color: #fff;
+ text-align: center;
+ text-decoration: none;
+ margin: 5px 5px 5px 5px;
+ background-color : #00046a;
+}
+
+.sigAccion a.sigBtnHrefXXXL span {
+ background-repeat: no-repeat;
+ display: inline-block;
+ /* display: inline-block; */
+ /* display: table; */
+ color: #fff;
+ margin: 4px 5px 0 12px;
+ padding: 2px 15px 8px 25px;
+}
+
+.sigAccion a.sigBtnHrefXL {
+ display: inline-block;
+ color: #fff;
+ text-align: center;
+ text-decoration: none;
+ margin: 5px 5px 5px 5px;
+}
+
+.sigAccion a.sigBtnHrefXL span {
+ background-repeat: no-repeat;
+ display: inline-block;
+ /* display: inline-block; */
+ /* display: table; */
+ color: #fff;
+ margin: 4px 5px 0 12px;
+ padding: 2px 15px 8px 25px;
+}
+
+.sigAccion a {
+
+  background: #333 url(iconos/alert-overlay.png) repeat-x; 
+  /*display: inline-block;*/ 
+  /*padding: 6px 10px 6px 10px;*/ 
+  color: #fff; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.6);
+  border-bottom: 1px solid rgba(0,0,0,0.25); 
+  /*position: relative;*/ 
+  cursor: pointer; 
+  
+}
+
+.sigAccion a:hover 
+{ 
+  background-color: #111; 
+  color: #fff; 
+}
+.sigAccion a:active 
+{ 
+  top: 1px; 
+}
+
+
+/* -------------------------------------------------------
+        Botón libre , libre XL y libre XXL
+----------------------------------------------------------*/
+
+.sigAccion a.sigBtnFreeHref,
+.sigAccion a.sigBtnFreeHrefXL,
+.sigAccion a.sigBtnFreeHrefXXL{ 
+  display: inline-block;
+  /*float: none; 
+  clear: none;  */
+  color:#fff; 
+  text-align:center;
+  text-decoration:none;  
+  /*margin-left:4px; 
+  margin-right:4px; 
+  margin-bottom:10px;
+  padding:7px 10px 9px 10px;*/ 
+  margin:5px 5px 5px 5px;
+  padding:7px 10px 7px 10px;
+  background-color: #00046a;
+  /*min-width:150px;*/
+
+}
+
+.sigAccion .longFix 
+{ 
+  width:242px;
+}
+
+
+.sigAccion a.sigBtnFreeHref span,
+.sigAccion a.sigBtnFreeHrefXL span,
+.sigAccion a.sigBtnFreeHrefXXL span{ 
+  color:#fff; 
+}
+
+
+
+/* -------------------------------------------------------
+        Botón Con Icono 
+----------------------------------------------------------*/
+
+.sigAccion a.sigBtnHref { 
+  display: inline-block;
+  color:#fff; 
+  text-align:center;
+  text-decoration:none; 
+  background-color: #00046a;
+  /*margin-left:4px; 
+  margin-right:4px; 
+  margin-bottom:10px;
+  padding-top:4px; */
+  margin:5px 5px 5px 5px;
+}
+
+.sigAccion a.sigBtnHref span { 
+  background-repeat: no-repeat; 
+  display: inline-block;
+  /*display: inline-block;*/ 
+  /*display:table; */
+  color:#fff;
+  margin:4px 5px 0 12px;
+  padding:2px 15px 8px 25px;
+  /*margin-left:0;  
+  padding-left: 24px; 
+  height: 20px; 
+  line-height: 20px;*/
+
+  }
+
+
+
+.sigAccion a.sigBtnHref:hover span { background-position: 0 -40px; }
+
+/* -------------------------------------------------------
+        Icono Solo
+----------------------------------------------------------*/
+
+
+.sigAccion a.sigIcnHref { 
+  background: transparent; 
+  padding: 5px 1px 6px 1px !important; 
+  color: #fff; 
+  text-decoration: none; 
+  border: none !important;
+  height:22px; 
+  width:22px;
+  border-radius: 0; 
+  box-shadow: none;
+  text-shadow: none;
+  display: inline-block; 
+  vertical-align: middle; 
+}
+
+.sigAccion a.sigIcnHref span { 
+  height:22px; 
+  width:22px; 
+  display:block;
+  vertical-align: middle; 
+  background-repeat: no-repeat; 
+  background-position: 0 -80px; 
+  background-color:transparent; 
+}
+
+
+
+.sigAccion a.sigIcnHref:hover { 
+  background-color:transparent;
+}
+
+
+.sigAccion a.sigIcnHref:hover span { 
+  cursor:hand; 
+  background-position: 0 -120px;
+}
+
+.sigAccion a.sigIcnHref.sinHover:hover span { 
+  cursor:default; 
+  background-position: 0 -80px;
+}
+
+.taulaeditable .filapadre .sigAccion a.sigIcnHref { 
+  background: transparent; 
+  display: inline-block; 
+  padding: 5px 10px 6px !important; 
+  color: #fff; 
+  text-decoration: none; 
+  border: none !important; 
+  height:22px; 
+  width:22px;
+  border-radius: 0; 
+  box-shadow: none;
+  text-shadow: none;
+  display: inline-block;  
+  vertical-align: middle; 
+}
+
+.taulaeditable .filapadre .sigAccion a.sigIcnHref span { 
+  height:22px; 
+  width:22px; 
+  display:block;
+  vertical-align: middle; 
+  background-repeat: no-repeat; 
+  background-position: 0 0; 
+  background-color:transparent; 
+}
+
+.taulaeditable .filapadre .sigAccion a.sigIcnHref:hover span { 
+  cursor:hand; 
+  background-position: 0 -40px;
+ }
+
+/* -------------------------------------------------------
+        Icono en Tabla
+----------------------------------------------------------*/
+
+.iconos .sigAccion a.sigIcnHref { 
+  padding:1px 2px 1px 2px !important;
+ }
+ 
+.iconos .sigAccion a.sigIcnHref span { 
+  vertical-align: middle; 
+  text-align:center;
+ }
+ 
+.iconos .sigAccion a.sigIcnHref:hover span { 
+  cursor:hand; 
+  background-position: 0 -120px;
+ }
+
+
+
+/* -------------------------------------------------------
+        Específicos
+----------------------------------------------------------*/
+/* Temporal */
+.sigAccion .btnAdvertencia, .sigAccion .btnAdvertencia
+{
+background-image: url(iconos/advertencia.png);
+}
+
+.sigAccion a.sigIcnHref .btnAdvertencia, .sigAccion a.sigIcnHref .btnAdvertencia
+{
+background-image: url(iconos/advertencia.png);
+}
+
+.sigAccion .btnQuitar, .sigAccion .btnQuitar
+{
+background-image: url(iconos/quitar.png);
+}
+
+.sigAccion a.sigIcnHref .btnQuitar, .sigAccion a.sigIcnHref .btnQuitar
+{
+background-image: url(iconos/quitar.png);
+}
+
+.sigAccion .btnEsp, .sigAccion .btnEsp
+{
+background-image: url(iconos/btnesp.png);
+}
+
+.sigAccion a.sigIcnHref .btnEsp, .sigAccion a.sigIcnHref .btnEsp
+{
+background-image: url(iconos/btnesp.png);
+}
+
+.sigAccion .btnCat, .sigAccion .btnCat
+{
+background-image: url(iconos/btncat.png);
+}
+
+.sigAccion a.sigIcnHref .btnCat, .sigAccion a.sigIcnHref .btnCat
+{
+background-image: url(iconos/btncat.png);
+}
+
+.sigAccion .btnEus, .sigAccion .btnEus
+{
+background-image: url(iconos/btneus.png);
+}
+
+.sigAccion a.sigIcnHref .btnEus, .sigAccion a.sigIcnHref .btnEus
+{
+background-image: url(iconos/btneus.png);
+}
+
+.sigAccion .btnEng, .sigAccion .btnEng
+{
+background-image: url(iconos/btneng.png);
+}
+
+.sigAccion a.sigIcnHref .btnEng, .sigAccion a.sigIcnHref .btnEng
+{
+background-image: url(iconos/btneng.png);
+}
+
+.sigAccion .btnFra, .sigAccion .btnFra
+{
+background-image: url(iconos/btnfra.png);
+}
+
+.sigAccion .btnAle, .sigAccion .btnAle
+{
+background-image: url(iconos/btnale.png);
+}
+
+.sigAccion a.sigIcnHref .btnAle, .sigAccion a.sigIcnHref .btnAle
+{
+background-image: url(iconos/btnale.png);
+}
+
+.sigAccion .btnIta, .sigAccion .btnIta
+{
+background-image: url(iconos/btnita.png);
+}
+
+.sigAccion a.sigIcnHref .btnIta, .sigAccion a.sigIcnHref .btnIta
+{
+background-image: url(iconos/btnita.png);
+}
+
+
+.sigAccion .btnPor, .sigAccion .btnPor
+{
+background-image: url(iconos/btnpor.png);
+}
+
+.sigAccion a.sigIcnHref .btnPor, .sigAccion a.sigIcnHref .btnPor
+{
+background-image: url(iconos/btnpor.png);
+}
+
+.sigAccion a.sigIcnHref .btnFra, .sigAccion a.sigIcnHref .btnFra
+{
+background-image: url(iconos/btnfra.png);
+}
+
+.sigAccion .btnPlay, .sigAccion .btnPlay
+{
+background-image: url(iconos/btnplay.png);
+}
+
+.sigAccion a.sigIcnHref .btnPlay, .sigAccion a.sigIcnHref .btnPlay
+{
+background-image: url(iconos/btnplay.png);
+}
+
+
+.sigAccion .btnPause, .sigAccion .btnPause
+{
+background-image: url(iconos/btnpause.png);
+}
+
+
+.sigAccion a.sigIcnHref .btnPause, .sigAccion a.sigIcnHref .btnPause
+{
+background-image: url(iconos/btnpause.png);
+}
+
+
+.sigAccion .btnStop, .sigAccion .btnStop
+{
+background-image: url(iconos/btnstop.png);
+}
+
+.sigAccion a.sigIcnHref .btnStop, .sigAccion a.sigIcnHref .btnStop
+{
+background-image: url(iconos/btnstop.png);
+}
+
+.sigAccion a.sigIcnHref .btnVacio, .sigAccion a.sigIcnHref .btnVacio
+{
+  background-image: none;
+  cursor:default;
+}
+
+.sigAccion a.sigIcnHref .btnMovil, .sigAccion a.sigIcnHref .btnMovil
+{
+background-image: url(iconos/icona_movil.png);
+}
+
+.sigAccion a.sigIcnHref .btnCargar, .sigAccion a.sigIcnHref .btnCargar
+{
+background-image: url(iconos/btncargar.png);
+}
+
+.sigAccion a.sigIcnHref .btnLapiz, .sigAccion a.sigIcnHref .btnLapiz
+{
+background-image: url(iconos/btnlapiz.png);
+}
+
+.sigAccion a.sigIcnHref .btnInfo, .sigAccion a.sigIcnHref .btnInfo
+{
+background-image: url(iconos/btninfo.png);
+}
+ /*-----*/
+
+.sigAccion .btnAceptar { background-image: url(iconos/icona_aceptar.png); }
+.sigAccion .btnAnular {	background-image: url(iconos/icona_anular.png); }
+.sigAccion .btnAnadir { background-image: url(iconos/icona_afegir.png); }
+.sigAccion .btnActivar { background-image: url(iconos/btnactivar.png);}
+.sigAccion .btnDesactivar { background-image: url(iconos/btndesactivar.png);}
+.sigAccion .btnActualizar { background-image: url(iconos/icona_actualitzar.png); }
+.sigAccion .btnAyuda { background-image: url(iconos/icona_ajuda.png) ; }
+.sigAccion .btnBajar { background-image: url(iconos/icona_bajar.png); }
+.sigAccion .btnBorrar {	background-image: url(iconos/icona_borrar.png); }
+.sigAccion .btnBuscar { background-image: url(iconos/icona_cerca.png); }
+.sigAccion .btnCalendario { background-image: url(iconos/icona_calendari.png); }
+.sigAccion .btnCancelar { background-image: url(iconos/icona_anular.png); }
+.sigAccion .btnCerrar {	background-image: url(iconos/icona_borrar.png); }
+.sigAccion .btnConsultar { background-image: url(iconos/icona_consulta.png); }
+.sigAccion .btnContinuar { background-image: url(iconos/icona_continuar.png); }
+.sigAccion .btnDatosPersonales { background-image: url(iconos/icona_dadespersonals.png); }
+.sigAccion .btnDerecha { background-image: url(iconos/icona_dreta.png); }
+.sigAccion .btnDchaTodos { background-image: url(iconos/icona_dretatot.png); }
+.sigAccion .btnDescargar { background-image: url(iconos/icona_descarregar.png); }
+.sigAccion .btnDuplicar { background-image: url(iconos/icona_copiar.png); }
+.sigAccion .btnEmail { background-image: url(iconos/icona_correu.png); }
+.sigAccion .btnGrabar { background-image: url(iconos/icona_desar.png); }
+.sigAccion .btnGenerar { background-image: url(iconos/icona_generar.png); }
+.sigAccion .btnImprimir { background-image: url(iconos/icona_imprimir.png); }
+.sigAccion .btnIzquierda { background-image: url(iconos/icona_esquerre.png); }
+.sigAccion .btnIzqdaTodos { background-image: url(iconos/icona_esquerretot.png); }
+.sigAccion .btnLimpiar { background-image: url(iconos/icona_netejar.png); }
+.sigAccion .btnModificar { background-image: url(iconos/icona_modificar.png); }
+.sigAccion .btnMultiidioma { background-image: url(iconos/icona_internacional.png); }
+.sigAccion .btnRango { background-image: url(iconos/icona_rang.png); }
+.sigAccion .btnSalir { background-image: url(iconos/icona_sortir.png); }
+.sigAccion .btnSeleccionar { background-image: url(iconos/icona_seleccionar.png); }
+.sigAccion .btnSinrango { background-image: url(iconos/icona_rangno.png); }
+.sigAccion .btnSubir { background-image: url(iconos/icona_pujar.png);  }
+.sigAccion .btnVolver { background-image: url(iconos/icona_tornar.png); }
+.sigAccion .btnMovil{ background-image: url(iconos/icona_movil.png); }
+.sigAccion .btnCarpeta{ background-image: url(iconos/btncarpeta.png); }
+.sigAccion .btnSubirCarpeta{ background-image: url(iconos/btnsubircarpeta.png); }
+.sigAccion .btnNuevaCarpeta{ background-image: url(iconos/btnnuevacarpeta.png); }
+.sigAccion .btnAdjunto{ background-image: url(iconos/btnadjunto.png); }
+.sigAccion .btnNuevoAdjunto{ background-image: url(iconos/btnnuevoadjunto.png); }
+.sigAccion .btnCargar{ background-image: url(iconos/btncargar.png); }
+.sigAccion .btnLapiz{ background-image: url(iconos/btnlapiz.png); }
+.sigAccion .btnInfo{ background-image: url(iconos/btninfo.png); }
+
+
+
+/*-------------------------------------------------------
+	   Deshabilitado 
+----------------------------------------------------------*/
+
+.sigAccion a.Disabled span, .sigAccion a.disabled span,
+.sigAccion a.Disabled:hover span, .sigAccion a.disabled:hover span,
+.sigAccion a.Disabled:active span, .sigAccion a.disabled:active span,
+.sigAccion a.Disabled:link span, .sigAccion a.disabled:link span,
+.sigAccion a.Disabled:visited span, .sigAccion a.disabled:visited span
+ { 
+  color: #aaa; 
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.2); 
+
+}
+
+.sigAccion a.Disabled:hover, 
+.sigAccion a.disabled:hover{
+  cursor: not-allowed;
+  background-color: #333; 
+}
+
+.sigAccion a.sigBtnHref.Disabled:hover span,
+.sigAccion a.sigBtnHref.disabled:hover span { background-position: 0 0px; }
+
+
+/*-------------- Símbolos diferentes estados ---------------*/
+td.simbolosEstados {
+	height:33px;
+	vertical-align:middle;
+	text-align:center;
+	overflow:hidden;
+	position:relative
+}
+
+span.simbolosEstados {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+td.simbolosEstados ul, span.simbolosEstados ul{
+	list-style-type: none;
+	margin: 4px 0 0;
+	padding:0;
+	clear:left;
+	float:left;
+    position:relative;
+	left:50%;
+}
+
+td.simbolosEstados ul li, span.simbolosEstados ul li{
+	margin-left:5px;
+	margin-right:5px;
+	float:left;
+	display:block;
+	position:relative;
+	right:50%;
+	height:23px;
+	padding-left:21px;
+	background: url(iconos/smbEstados.png) no-repeat 0 31px;
+}
+
+td.simbolosEstados ul li.smbOk, span.simbolosEstados ul li.smbOk{ 					background-position: 0 0px;}
+td.simbolosEstados ul li.smbWarning, span.simbolosEstados ul li.smbWarning{		background-position: 0 -31px;}
+td.simbolosEstados ul li.smbKo, span.simbolosEstados ul li.smbKo{					background-position: 0 -62px;}
+td.simbolosEstados ul li.smbCheck, span.simbolosEstados ul li.smbCheck{			background-position: 0 -93px;}
+td.simbolosEstados ul li.smbUncheck, span.simbolosEstados ul li.smbUncheck{		background-position: 0 -124px;}
+td.simbolosEstados ul li.smbLocked, span.simbolosEstados ul li.smbLocked{			background-position: 0 -155px;}
+td.simbolosEstados ul li.smbUnlocked, span.simbolosEstados ul li.smbUnlocked{		background-position: 0 -186px;}
+td.simbolosEstados ul li.smbVisa, span.simbolosEstados ul li.smbVisa{
+	background-position: 0 -217px;
+	height:25px;
+	padding-left:35px;
+}
+td.simbolosEstados ul li.smbMastercard, span.simbolosEstados ul li.smbMastercard{
+	background-position: 0 -252px;
+	height:25px;
+	padding-left: 35px;
+}
+
+td.simbolosEstados ul li.smbBlue, span.simbolosEstados ul li.smbBlue{		background-position: 0 -308px;}
+td.simbolosEstados ul li.smbPurple, span.simbolosEstados ul li.smbPurple{		background-position: 0 -336px;}
+td.simbolosEstados ul li.smbYellow, span.simbolosEstados ul li.smbYellow{		background-position: 0 -365px;}
+td.simbolosEstados ul li.smbAlert, span.simbolosEstados ul li.smbAlert{
+	background-position: 0 -281px;
+	height:25px;
+	padding-left: 23px;
+}
+.fs3Botones{
+    padding-top: 5px;
+    padding-left: 13px;
+    width: 110px;
+    height: 32px;
+    background-repeat: no-repeat !important;
+    background-position-x: 5px !important;
+    background-position-y: 5px !important;
+    font-size: initial !important;
+}
+
+.fs3BotonesXL{
+    padding-top: 5px;
+    padding-left: 13px;
+    width: 200px;
+    height: 32px;
+    background-repeat: no-repeat !important;
+    background-position-x: 5px !important;
+    background-position-y: 5px !important;
+    font-size: initial !important;
+}
+
+.fs3BotonesXXL{
+    padding-top: 5px;
+    padding-left: 13px;
+    width: 100%;
+    height: 32px;
+    background-repeat: no-repeat !important;
+    background-position-x: 5px !important;
+    background-position-y: 5px !important;
+    font-size: initial !important;
+}
+
+.fs3Disabled {
+    opacity: .35 !important;
+}

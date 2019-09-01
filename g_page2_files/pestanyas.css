@@ -1,0 +1,352 @@
+/* Validada */
+/*-------------------------------------------------------------------------------------------------
+-Producto:	ESTIL
+-Universidad: UC3
+-Versión: rev. 2.0.57
+-Compatibilidad: FF 3.X y sup., IE 7 y sup., Chrome 12 y sup., Opera 10 y sup., Safari 5 y sup.
+-Autores:	ARAM, AVIM, EROF, JMSM, RCOJ, TMOP 
+			SIGMA Gestión Universitaria
+			http://www.gestionuniversitariasigma.com/
+---------------------------------------------------------------------------------------------------*/
+
+
+/*ZONA DE PESTA AS, SELECCION DE OPCION    */
+#pestanyas , #pestanyas {
+/*float: left;*/ /*taba descomentado*/
+position:relative;
+width:auto;
+padding:0;
+float:left;
+font-size: 93%;
+line-height: normal;
+text-align:center;
+left:29px !important;
+/**left:29px !important;*/
+z-index:1;
+/*	padding-bottom: 21px !important ; /*taba a cero*/
+/*padding-bottom: 0px ; */
+/*margin-right: 1px;*/
+/*margin-left:4px;*/
+/*padding-left:5px;*/
+}
+
+.CuerpoPestanya, .cuerpoPestanya
+{
+
+width:auto;
+clear: left;
+position:relative;
+background-color: transparent;
+border-bottom: 1px solid #00046a;
+border-left: 1px solid #00046a;
+border-right: 1px solid #00046a;
+border-top: 1px solid #00046a;
+text-align:center;
+margin-left:30px;
+margin-right:7px;
+left:0px;
+padding:15px 45px 0 45px;
+top:-2px;
+/*margin-left:10px;
+margin-right:10px;*/
+
+/*margin-left:auto;*/
+
+
+/**left: -13px !important;*/
+
+/**top:-2px !important;*/
+
+
+}
+
+
+#pestanyas ul, #pestanyas ul
+{
+margin: 0;
+padding: 10px 1px 0;
+list-style: none;
+
+}
+
+
+#pestanyas li, #pestanyas li
+{
+float: left;
+margin: 0;
+padding: 0 0 0 0;
+}
+
+#pestanyas li a, #pestanyas li a
+{
+float: left;
+display: block;
+background: #fff;
+padding: 5px 15px 5px 15px;
+text-decoration: none;
+font-size: 10px;
+font-weight: bold;
+color: #7D7B7A;
+border: 1px solid #778;
+border-bottom: 1px solid #00046a;
+margin-top:2px;
+
+}
+
+
+#pestanyas li a:hover, #pestanyas li a:hover
+{
+color: #000;
+border: 1px solid #778;
+border-bottom: 1px solid #00046a;
+
+}
+
+
+#pestanyas .current a, #pestanyas .current a
+{
+background: white;
+border-bottom: 2px solid white;
+border-left: 1px solid #00046a;
+border-right: 1px solid #00046a;
+border-top: 1px solid #00046a;
+margin-top:2px;
+color: #000;
+/*#333;
+*/
+padding-bottom: 5px;
+}
+
+
+#pestanyas .current a:hover, #pestanyas .current a:hover
+{
+background: white;
+border-bottom: 2px solid white;
+border-left: 1px solid #00046a;
+border-right: 1px solid #00046a;
+border-top: 1px solid #00046a;
+color: #67320E;
+margin-top:2px;
+padding-bottom: 5px;
+cursor: default;
+}
+
+#pestanyas .ko a, #pestanyas .ko a
+{
+background-color:#DFDFDF;
+border-bottom: 1px solid #00046a;
+color: #7D7B7A;
+
+}
+
+#pestanyas .ko a:hover, #pestanyas .ko a:hover
+{
+background-color:#DFDFDF;
+border-bottom: 1px solid #00046a;
+color: #7D7B7A;
+cursor: default;
+
+}
+
+
+#pestanyas li.incompleto a, #pestanyas li.incompleto a
+{
+background-color:#FFBFBF;
+}
+
+/*NAVEGACION INTERNA*/
+
+div#navInterna, div#navInterna
+{
+position:relative;
+margin:10px auto 15px auto;
+text-align:center;
+height:30px;
+
+}
+
+
+
+/*----------------- PARES -------------------------*/
+
+#navInterna ul a, #navInterna ul a
+{
+font-weight: bold;
+text-decoration: none;
+font-size:12px;
+}
+
+#navInterna ul, #navInterna li ul, #navInterna ul li, #navInterna ul, #navInterna li ul, #navInterna ul li
+{
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+#navInterna  ul, #navInterna  ul
+{
+display:inline-block;
+background-color:#00046a;
+padding:10px;
+border-radius:5px;
+
+}
+
+#navInterna ul li, #navInterna ul li
+{
+float: left;
+margin-right:3px;
+margin-left:3px;
+
+
+}
+
+#navInterna ul li a, #navInterna ul li a
+{
+color: #000;
+background: #E0DFE3 url("imagenes/right-none-arrow.png") no-repeat right top;
+padding: 3px 18px 3px 15px;
+border-top:1px solid #9F9F9F;
+display:block;
+}
+
+#navInterna ul li.parent a, #navInterna ul li.parent a
+{
+color: #000;
+background: #E0DFE3 url("imagenes/right-down-arrow.png") no-repeat right top;
+padding: 3px 25px 3px 10px;
+
+
+}
+
+
+
+#navInterna ul li a:hover, #navInterna ul li a:hover
+{
+text-decoration:underline;
+}
+
+#navInterna ul li.parent a:hover, #navInterna ul li.parent a:hover
+{
+text-decoration:none;
+background-color:#CFCFCF;
+}
+
+#navInterna ul li a:active, #navInterna ul li a:active
+{
+color: #000;
+border: 1px #ffffff inset;
+}
+
+/*----------------- FILLS -------------------------*/
+
+#navInterna ul ul, #navInterna ul ul
+{
+display: none;
+background-color:#fff;
+border:1px solid #9F9F9F;
+padding:5px 0px 5px 0px;
+margin-top:3px;
+border-radius:0px 0px 10px 10px;
+
+}
+
+#navInterna ul ul li, #navInterna ul ul li
+{
+float: none;
+}
+
+#navInterna ul ul li a, #navInterna ul ul li a
+{
+padding: 0px;
+margin: 0px;
+background: #E0DFE3;
+
+}
+
+#navInterna ul li:hover ul, #navInterna ul li:hover ul
+{
+display: block;
+position: absolute;
+margin-top:0px;
+margin-left:-1px;
+z-index:100000;
+
+}
+
+
+#navInterna ul li:hover ul  li a, #navInterna ul li:hover ul  li a
+{
+display: block;
+width: 150px;
+border: none;
+padding: 2px;
+border:1px solid white;
+font-size:11px;
+font-weight:normal;
+background: #E0DFE3;
+
+}
+
+#navInterna ul li ul li a:hover, #navInterna ul li ul li a:hover
+{
+
+text-decoration:underline;
+
+}
+
+#navInterna ul# li:hover ul  li a:before , #navInterna ul# li:hover ul  li a:before { content: " >> "; }
+
+  #navInterna.mobil ul a
+  {
+   font-size:15px; 
+  }
+  
+  #navInterna.mobil ul li a
+  {
+  background-image:none;
+  padding: 5px 18px 5px 18px;
+  border-radius: 0 0 5px;
+  }
+  
+  
+  #navInterna.mobil  ul li a:hover {
+text-decoration:underline;
+}
+
+
+  #navInterna.mobil ul li.parent a{
+     background: #E0DFE3 url("imagenes/right-down-arrow2.png") no-repeat right top;
+     padding: 5px 30px 5px 15px;
+     border-radius: 0 0 5px;
+  }
+  
+  #navInterna.mobil ul li.parent a:hover
+{
+  text-decoration:none;
+  background-color:#CFCFCF;
+}
+  
+  #navInterna.mobil ul li ul li a {
+  
+    background-image:none !important;
+    padding: 10px !important; 
+    width: 250px !important;
+    color:#000 !important;
+    font-size:14px !important;
+  
+  }
+     
+
+
+
+
+/*########################################################################
+     TABS
+########################################################################*/
+
+
+.ui-tabs { margin-bottom: 20px; }
+
+.ui-tabs .titulo, .ui-tabs .Titulo { background: transparent !important; }
+
+.ui-tabs .ui-tabs-nav{ padding-left: 15px; }

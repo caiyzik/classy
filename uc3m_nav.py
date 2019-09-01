@@ -56,16 +56,25 @@ def search_for_course(browser, course_num):
 	return expand.text 
 	#use class btnEng to find all courses in English
 
+def get_all_campus_courses(browser):
+	expand_button = "#expTodo"
+	expand = browser.find_element_by_css_selector(expand_button)
+	expand.click()
+	print(browser.page_source)
+	with open("text_page.html", 'w') as f:
+		f.write(browser.page_source)
+
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description='Get course schedule information')
 	parser.add_argument('course_num', type=str, help='UC3M Course Number')
 	args = parser.parse_args()
 
-	#browser = webdriver.Chrome()
-	#browser.get(sigma_login)
+	browser = webdriver.Chrome()
+	browser.get(sigma_login)
 
 	try:
-		#go_to_course_search(browser, "getafe")
+		go_to_course_search(browser, "getafe")
+		get_all_campus_courses(browser)
 		#result = search_for_course(browser, args.course_num)
 		print(result)
 	except:
