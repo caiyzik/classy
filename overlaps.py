@@ -1,6 +1,6 @@
 #get all overlaps in courses
 from intervaltree import Interval, IntervalTree
-from enum import Enum
+import enum
 from itertools import product
 
 #Test set:
@@ -13,7 +13,7 @@ from itertools import product
 #7: Th,15-18
 #8: M,15-17, Th, 15-17
 
-class Day(Enum):
+class Day(enum.Enum):
 	M = 24
 	T = 48
 	W = 72
@@ -37,7 +37,7 @@ class Course():
 				final.append("{0} :: {1}-{2}, ".format(key, time[0], time[1]))
 		return "".join(final).rstrip(' ,')
 	def __repr__(self):
-		return self.__str__()
+		return "{0} ({1}) ".format(self.name, self.number)
 	
 
 class Schedule(): #subclass of interval tree instead?
@@ -73,10 +73,10 @@ class Schedule(): #subclass of interval tree instead?
 	def get_possible_schedules(self):
 
 		#got this from a stack overflow solution. Need to adapt and figure out why it works
-		rest = tuple(el for el in self.week[:] if not any(el.data in ol for ol in self.overlaps))
-		[unique + rest for unique in product(*self.overlaps) if all(u in self.week[:] for u in unique)]
-		return rest
-
+		rest = tuple(el.data for el in self.week[:] if not any(el.data in ol for ol in self.overlaps))
+		course_list = [unique + rest for unique in product(*self.overlaps)] #if all(u in self.week[:] for u in unique)]
+		return course_list
+		#return list(map(lambda course: (c.name for c in course), course_list))
 	def get_overlaps(self):
 		#print overlaps better? Might have to work with having course inhe
 		pass
@@ -94,8 +94,16 @@ def main():
 	art = Course("Art History", 13283)
 	art.add_meeting_time(day="M", begin="14:00", end="15:00")
 
-	schedule.add_courses(cmparch, tv, art)
-	print(schedule.get_possible_schedules())
+	course_4 = Course("Conflict", 55555)
+	course_4.add_meeting_time(day="M", begin="14:45", end="15:45")
+
+	schedule.add_courses(cmparch, tv, art, course_4)
+	for num, sched in enumerate(schedule.get_possible_schedules()):
+		print("Schedule Num: {0}".format(num+1))
+		for course in sched:
+			print(course)
+		print()
+	
 
 
 
